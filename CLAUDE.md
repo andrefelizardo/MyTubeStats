@@ -36,7 +36,7 @@ This is a SaaS/Web platform built with a Go REST API backend and a Vite + React 
 
 ```
 .
-├── backend/
+├── api/
 │   ├── cmd/
 │   │   └── server/          # Application entrypoint
 │   │       └── main.go
@@ -118,10 +118,10 @@ This is a SaaS/Web platform built with a Go REST API backend and a Vite + React 
 
 ```bash
 # Backend
-cd backend && go run ./cmd/server          # Run API server
-cd backend && go test ./...                 # Run all tests
-cd backend && go test -race ./...           # Run tests with race detector
-cd backend && go vet ./...                  # Lint
+cd api && go run ./cmd/server          # Run API server
+cd api && go test ./...                 # Run all tests
+cd api && go test -race ./...           # Run tests with race detector
+cd api && go vet ./...                  # Lint
 
 # Frontend
 cd frontend && npm run dev                  # Dev server
